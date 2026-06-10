@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeritageLens AI - Point, Scan, Discover History</title>
+    <meta name="description" content="AI-powered heritage exploration platform. Upload monument images to discover history, architectural details, cultural significance, and storytelling narratives. Built for Tradition Hacks 2026.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo-container">
+                <div class="logo-icon">
+                    <i data-lucide="scan-face"></i>
+                </div>
+                <span class="logo-text">HeritageLens <span class="logo-highlight">AI</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#problem">The Gap</a>
+                <a href="#why-it-matters">Why It Matters</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#demo" class="nav-demo-btn">Live Scanner</a>
+                <a href="#features">Features</a>
+                <a href="#impact">Impact</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <div class="nav-actions">
+                <span class="hackathon-badge-nav">Tradition Hacks '26</span>
+                <a href="#demo" class="cta-nav">Try Scanner</a>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer">
+        <button class="mobile-drawer-close" aria-label="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
+        <div class="mobile-drawer-links">
+            <a href="#problem" class="drawer-link">The Gap</a>
+            <a href="#why-it-matters" class="drawer-link">Why It Matters</a>
+            <a href="#how-it-works" class="drawer-link">How It Works</a>
+            <a href="#demo" class="drawer-link highlight">Live Scanner</a>
+            <a href="#features" class="drawer-link">Features</a>
+            <a href="#impact" class="drawer-link">Impact</a>
+            <a href="#roadmap" class="drawer-link">Roadmap</a>
+            <a href="#about" class="drawer-link">About</a>
+            <div class="drawer-footer">
+                <span class="hackathon-badge-drawer">Built for Tradition Hacks 2026</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+            
+            <div class="hero-container">
+                <div class="hackathon-badge-container">
+                    <span class="hackathon-badge">
+                        <i data-lucide="trophy"></i>
+                        Built for Tradition Hacks 2026
+                    </span>
+                </div>
+                
+                <h1 class="hero-title">HeritageLens <span class="gradient-text">AI</span></h1>
+                <p class="hero-tagline">Point, Scan, Discover History</p>
+                
+                <p class="hero-description">
+                    Transform every monument into a story. Upload an image of any heritage site and let AI reveal its history, architecture, cultural significance, and hidden stories.
+                </p>
+                
+                <div class="hero-ctas">
+                    <a href="#demo" class="btn btn-primary" id="hero-upload-btn">
+                        <i data-lucide="upload-cloud"></i>
+                        Upload Monument Image
+                    </a>
+                    <a href="#demo" class="btn btn-secondary" id="hero-demo-btn">
+                        <i data-lucide="play"></i>
+                        Explore Demo
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">98.4%</span>
+                        <span class="stat-label">AI Accuracy</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">10k+</span>
+                        <span class="stat-label">Heritage Sites</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">Bilingual</span>
+                        <span class="stat-label">English / हिन्दी</span>
+                    </div>
+                </div>
+
+                <!-- Dashboard Preview Mockup -->
+                <div class="hero-mockup-wrapper">
+                    <div class="mockup-frame">
+                        <div class="mockup-header">
+                            <div class="mockup-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="mockup-search">
+                                <i data-lucide="globe"></i> heritagelens.ai/dashboard
+                            </div>
+                        </div>
+                        <div class="mockup-content-preview">
+                            <div class="preview-layout">
+                                <div class="preview-sidebar">
+                                    <div class="preview-item active"></div>
+                                    <div class="preview-item"></div>
+                                    <div class="preview-item"></div>
+                                </div>
+                                <div class="preview-main">
+                                    <div class="preview-header-bar">
+                                        <div class="preview-title-bar"></div>
+                                        <div class="preview-badge-bar"></div>
+                                    </div>
+                                    <div class="preview-grid">
+                                        <div class="preview-card-large"></div>
+                                        <div class="preview-card-small"></div>
+                                        <div class="preview-card-small"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Problem Section -->
+        <section class="problem-section" id="problem">
+            <div class="container">
+                <div class="section-tag">The Problem</div>
+                <h2 class="section-title">Why HeritageLens AI?</h2>
+                
+                <div class="problem-content-grid">
+                    <div class="problem-text-column">
+                        <p class="problem-highlight">
+                            Millions of people visit historical landmarks every year but often leave without understanding their true historical, cultural, and architectural significance.
+                        </p>
+                        <p class="problem-body">
+                            Information boards are limited, guides are not always available, and cultural stories are gradually being forgotten in the digital age. HeritageLens AI bridges this gap by making heritage exploration interactive, intelligent, and universally accessible.
+                        </p>
+                        
+                        <div class="problem-points">
+                            <div class="problem-point-item">
+                                <div class="point-icon"><i data-lucide="alert-circle"></i></div>
+                                <div>
+                                    <h4>Static Signage</h4>
+                                    <p>Standard plaques contain minimal information and lack engagement.</p>
+                                </div>
+                            </div>
+                            <div class="problem-point-item">
+                                <div class="point-icon"><i data-lucide="users"></i></div>
+                                <div>
+                                    <h4>Inaccessible Guiding</h4>
+                                    <p>Professional guides are expensive, inconsistent, or unavailable in native languages.</p>
+                                </div>
+                            </div>
+                            <div class="problem-point-item">
+                                <div class="point-icon"><i data-lucide="book-open"></i></div>
+                                <div>
+                                    <h4>Forgotten Lore</h4>
+                                    <p>Intangible cultural heritage, regional folklore, and local legends are fading away.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-visual-column">
+                        <div class="comparison-card">
+                            <div class="comparison-header">The Information Deficit</div>
+                            <div class="comparison-item before">
+                                <div class="badge-status error">Traditional Travel</div>
+                                <h4>Physical Plaque & Search Engine</h4>
+                                <p>Static dates, fragmented searches, dry facts, and language barriers.</p>
+                            </div>
+                            <div class="comparison-arrow">
+                                <i data-lucide="arrow-down"></i>
+                            </div>
+                            <div class="comparison-item after">
+                                <div class="badge-status success">HeritageLens AI</div>
+                                <h4>Immersive Scanning & Stories</h4>
+                                <p>Instant recognition, multidimensional insights, engaging oral narration, and instant bilingual translation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Why It Matters Section -->
+        <section class="why-it-matters-section" id="why-it-matters">
+            <div class="container">
+                <div class="section-tag">Our Mission</div>
+                <h2 class="section-title">Why It Matters</h2>
+                <p class="section-subtitle">Fusing technology and history to preserve humanity's greatest achievements.</p>
+                
+                <div class="matters-grid">
+                    <div class="matters-card">
+                        <div class="matters-card-icon bg-gold">
+                            <i data-lucide="landmark"></i>
+                        </div>
+                        <h3>Cultural Preservation</h3>
+                        <p>Digitizes and catalogs historical architectures and intangible local legends, safeguarding them from being lost to time.</p>
+                    </div>
+                    
+                    <div class="matters-card">
+                        <div class="matters-card-icon bg-amber">
+                            <i data-lucide="compass"></i>
+                        </div>
+                        <h3>Promoting Smart Tourism</h3>
+                        <p>Elevates the travel experience by transforming passive sightseeing into active, educational exploration for travelers worldwide.</p>
+                    </div>
+                    
+                    <div class="matters-card">
+                        <div class="matters-card-icon bg-emerald">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <h3>Empowering Students</h3>
+                        <p>Provides an engaging, interactive learning platform that makes history come alive, fostering deep curiosity in classrooms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. How It Works Section -->
+        <section class="how-it-works-section" id="how-it-works">
+            <div class="container">
+                <div class="section-tag">Workflow</div>
+                <h2 class="section-title">How HeritageLens Works</h2>
+                <p class="section-subtitle">An end-to-end intelligent scanning flow designed for instant discovery.</p>
+                
+                <div class="steps-grid">
+                    <!-- Step 1 -->
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <div class="step-icon"><i data-lucide="camera"></i></div>
+                        <h3>Upload Monument Image</h3>
+                        <p>Snap a photo while visiting a heritage site or upload an image from your device storage.</p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <div class="step-icon"><i data-lucide="cpu"></i></div>
+                        <h3>AI Identifies Heritage Site</h3>
+                        <p>HeritageLens computer vision models recognize the monument coordinates and unique structural features.</p>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <div class="step-icon"><i data-lucide="database"></i></div>
+                        <h3>Analyze Cultural Insights</h3>
+                        <p>AI aggregates architectural records, cultural impact, historical timelines, and interesting facts.</p>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="step-card">
+                        <div class="step-number">04</div>
+                        <div class="step-icon"><i data-lucide="sparkles"></i></div>
+                        <h3>Generate Storytelling</h3>
+                        <p>Outputs an immersive storytelling narrative with bilingual support and speech narration read aloud.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. AI Analysis Demo Section -->
+        <section class="demo-section" id="demo">
+            <div class="container">
+                <div class="section-tag">Interactive Demo</div>
+                <h2 class="section-title">AI Analysis Dashboard</h2>
+                <p class="section-subtitle">Upload a photo to see HeritageLens AI analyze a heritage site in real time, or click the presets below.</p>
+                
+                <!-- Preset selection cards -->
+                <div class="preset-selector">
+                    <span class="preset-label">Explore Preset Monuments:</span>
+                    <div class="presets-grid">
+                        <button class="preset-btn active" data-monument="taj_mahal">
+                            <span class="preset-thumb taj-thumb"></span>
+                            Taj Mahal
+                        </button>
+                        <button class="preset-btn" data-monument="colosseum">
+                            <span class="preset-thumb colosseum-thumb"></span>
+                            Colosseum
+                        </button>
+                        <button class="preset-btn" data-monument="machu_picchu">
+                            <span class="preset-thumb machu-thumb"></span>
+                            Machu Picchu
+                        </button>
+                        <button class="preset-btn" data-monument="pyramids">
+                            <span class="preset-thumb pyramids-thumb"></span>
+                            Pyramids of Giza
+                        </button>
+                        <button class="preset-btn" data-monument="great_wall">
+                            <span class="preset-thumb wall-thumb"></span>
+                            Great Wall
+                        </button>
+                        <button class="preset-btn" data-monument="eiffel_tower">
+                            <span class="preset-thumb eiffel-thumb"></span>
+                            Eiffel Tower
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Main Demo Dashboard Grid -->
+                <div class="dashboard-grid">
+                    <!-- Left: Upload & Input Panel -->
+                    <div class="dashboard-card upload-panel">
+                        <div class="card-header">
+                            <h3><i data-lucide="scan"></i> Live Camera / Upload Scanner</h3>
+                            <span class="status-indicator live">Ready</span>
+                        </div>
+                        
+                        <div class="upload-zone" id="upload-zone">
+                            <input type="file" id="file-input" accept="image/*" class="file-input-hidden">
+                            <div class="upload-zone-content" id="upload-content-default">
+                                <div class="upload-icon-circle">
+                                    <i data-lucide="image"></i>
+                                </div>
+                                <h4>Drag & Drop Monument Image</h4>
+                                <p>or click to browse local files</p>
+                                <span class="file-format-hint">Supports JPEG, PNG up to 10MB</span>
+                            </div>
+                            
+                            <!-- Display container for uploaded image -->
+                            <div class="image-preview-container hidden" id="image-preview-container">
+                                <img src="" id="selected-image-view" alt="Scanned monument image preview">
+                                <!-- Laser scanning line element -->
+                                <div class="scanner-laser" id="laser-line"></div>
+                            </div>
+                        </div>
+
+                        <!-- Scan Trigger Button -->
+                        <button class="btn btn-primary btn-full-width" id="scan-trigger-btn">
+                            <i data-lucide="sparkles"></i> Scan Monument
+                        </button>
+                        
+                        <!-- Real-time Console Log / Status ticker -->
+                        <div class="console-ticker-container">
+                            <div class="console-header">
+                                <span><i data-lucide="terminal"></i> System Diagnostics</span>
+                                <span class="console-dots"><span></span><span></span></span>
+                            </div>
+                            <div class="console-log-lines" id="console-logs">
+                                <div class="log-line system">> System online. Choose a preset or upload to scan.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Analysis Output Panel -->
+                    <div class="dashboard-card analysis-output-panel">
+                        <div class="card-header">
+                            <div class="dashboard-title-group">
+                                <h3><i data-lucide="layout-dashboard"></i> Heritage Analysis Report</h3>
+                                <div class="title-with-badge">
+                                    <span class="analysis-monument-name" id="display-title">Taj Mahal</span>
+                                    <span class="confidence-badge" id="display-confidence">100% Match</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Controls: Bookmark and Language Toggle -->
+                            <div class="dashboard-controls">
+                                <button class="bookmark-btn" id="bookmark-toggle-btn" title="Save to Scans History">
+                                    <i data-lucide="bookmark"></i>
+                                </button>
+                                
+                                <div class="language-toggle">
+                                    <button class="lang-btn active" id="lang-en">EN</button>
+                                    <button class="lang-btn" id="lang-hi">हिन्दी</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Analysis content layout -->
+                        <div class="analysis-report-content">
+                            <!-- Detail Blocks Grid -->
+                            <div class="report-grid">
+                                <!-- Historical Background -->
+                                <div class="report-block">
+                                    <h4 class="block-title"><i data-lucide="history"></i> Historical Background</h4>
+                                    <div class="block-text" id="display-history">
+                                        The Taj Mahal was commissioned by Emperor Shah Jahan in 1632 as a tribute to his beloved wife Mumtaz Mahal.
+                                    </div>
+                                </div>
+                                
+                                <!-- Architectural Style -->
+                                <div class="report-block">
+                                    <h4 class="block-title"><i data-lucide="palette"></i> Architectural Style</h4>
+                                    <div class="block-text" id="display-architecture">
+                                        Mughal Architecture blending Persian, Islamic, and Indian influences.
+                                    </div>
+                                </div>
+                                
+                                <!-- Cultural Significance -->
+                                <div class="report-block">
+                                    <h4 class="block-title"><i data-lucide="heart"></i> Cultural Significance</h4>
+                                    <div class="block-text" id="display-cultural">
+                                        A symbol of love and one of the most recognized cultural landmarks in the world.
+                                    </div>
+                                </div>
+                                
+                                <!-- Interesting Facts -->
+                                <div class="report-block">
+                                    <h4 class="block-title"><i data-lucide="lightbulb"></i> Interesting Facts</h4>
+                                    <div class="block-text" id="display-facts">
+                                        Recognized as a UNESCO World Heritage Site and one of the Seven Wonders of the World.
+                                    </div>
+                                </div>
+                                
+                                <!-- Tourism Relevance -->
+                                <div class="report-block">
+                                    <h4 class="block-title"><i data-lucide="compass"></i> Tourism Relevance</h4>
+                                    <div class="block-text" id="display-tourism">
+                                        Surrounding local sites, traveler guidelines, and conservation details.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Story Mode Narrative -->
+                            <div class="story-mode-card">
+                                <div class="story-mode-header">
+                                    <h4><i data-lucide="book-open"></i> Storytelling Narrator</h4>
+                                    <!-- TTS Narrator Audio Control -->
+                                    <div class="audio-narration-controls">
+                                        <button class="audio-btn" id="audio-play-btn" title="Listen to narrative">
+                                            <i data-lucide="play"></i> <span class="audio-btn-text">Listen</span>
+                                        </button>
+                                        <button class="audio-btn hidden" id="audio-pause-btn" title="Pause narration">
+                                            <i data-lucide="pause"></i> <span>Pause</span>
+                                        </button>
+                                        <button class="audio-btn hidden" id="audio-stop-btn" title="Stop narration">
+                                            <i data-lucide="square"></i> <span>Stop</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="story-text-body" id="display-story">
+                                    Standing gracefully on the banks of the Yamuna River, the Taj Mahal tells a timeless story of love, devotion, and architectural brilliance that continues to inspire generations.
+                                </div>
+                                <div class="audio-wave-visualizer hidden" id="audio-wave">
+                                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bookmark / Saved Scans History Drawer-style list -->
+                <div class="history-scans-shelf">
+                    <div class="history-header">
+                        <h4><i data-lucide="history"></i> Saved Scans History (`localStorage`)</h4>
+                        <button class="clear-history-btn" id="clear-history-btn"><i data-lucide="trash-2"></i> Clear</button>
+                    </div>
+                    <div class="history-list-items" id="history-items-container">
+                        <!-- Bookmarks loaded dynamically here -->
+                        <span class="no-history-text">No saved scans yet. Bookmark a scan to save it!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Features Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-tag">Key Features</div>
+                <h2 class="section-title">Core Technology Capabilities</h2>
+                <p class="section-subtitle">Features engineered to deliver an advanced cultural exploration experience.</p>
+                
+                <div class="features-grid">
+                    <!-- F1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="image"></i></div>
+                        <h3>AI Monument Recognition</h3>
+                        <p>High-precision custom computer vision models trained to recognize landmarks even from obscure angles or poor lighting conditions.</p>
+                    </div>
+                    <!-- F2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="calendar"></i></div>
+                        <h3>Historical Insights</h3>
+                        <p>Instant chronological logs mapping the rise, timeline shifts, renovations, and modern-day relevance of monuments.</p>
+                    </div>
+                    <!-- F3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="drafting-compass"></i></div>
+                        <h3>Architectural Analysis</h3>
+                        <p>Deconstructs structure, materials, styles (e.g., Baroque, Mughal, Gothic), and structural engineering marvels.</p>
+                    </div>
+                    <!-- F4 -->
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="globe-2"></i></div>
+                        <h3>Cultural Significance</h3>
+                        <p>Identifies why sites are UNESCO classified, explaining historical beliefs, events, and socio-religious contexts.</p>
+                    </div>
+                    <!-- F5 -->
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="scroll"></i></div>
+                        <h3>Local Legends & Folklore</h3>
+                        <p>Retrieves oral narratives, myths, ghost stories, and regional legends surrounding the heritage site.</p>
+                    </div>
+                    <!-- F6 -->
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="smartphone"></i></div>
+                        <h3>Smart Tourism Assistant</h3>
+                        <p>Suggests visiting hours, conservation guidelines, and surrounding historical sites to plan optimized cultural trips.</p>
+                    </div>
+                    <!-- F7 -->
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="languages"></i></div>
+                        <h3>Multilingual Support</h3>
+                        <p>Instantly adapts outputs to English, Hindi, and more regional languages for universal tourist accessibility.</p>
+                    </div>
+                    <!-- F8 -->
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="audio-lines"></i></div>
+                        <h3>Interactive Story Mode</h3>
+                        <p>Converts dry historical lists into a narrative monologue coupled with voiceover capabilities.</p>
+                    </div>
+                    <!-- F9 -->
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="award"></i></div>
+                        <h3>Educational Learning</h3>
+                        <p>Includes built-in knowledge quizzes and scan milestones to engage high school students in active learning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Project Impact & Cultural Preservation Section -->
+        <section class="impact-section" id="impact">
+            <div class="container">
+                <div class="section-tag">Hackathon Track: Cultural Preservation</div>
+                <h2 class="section-title">Creating Impact Through Heritage and Technology</h2>
+                <p class="section-subtitle">How HeritageLens AI addresses global cultural heritage preservation goals.</p>
+                
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon-wrapper color-gold">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h3>Heritage Preservation</h3>
+                        <p>Digitally records threatened monument data, local stories, and architectural models, creating a perpetual digital backup of heritage.</p>
+                    </div>
+                    
+                    <div class="impact-card">
+                        <div class="impact-icon-wrapper color-amber">
+                            <i data-lucide="heart-handshake"></i>
+                        </div>
+                        <h3>Cultural Awareness</h3>
+                        <p>Fosters empathy, understanding, and global tolerance by educating visitors on the shared history and artistic dialogue between cultures.</p>
+                    </div>
+                    
+                    <div class="impact-card">
+                        <div class="impact-icon-wrapper color-emerald">
+                            <i data-lucide="trending-up"></i>
+                        </div>
+                        <h3>Tourism Enhancement</h3>
+                        <p>Supports local communities and economies by directing tourists to lesser-known sites, encouraging sustainable regional travel.</p>
+                    </div>
+                    
+                    <div class="impact-card">
+                        <div class="impact-icon-wrapper color-blue">
+                            <i data-lucide="glasses"></i>
+                        </div>
+                        <h3>Student Learning</h3>
+                        <p>Decentralizes classroom learning. Students can scan photographs in books or museum visits to trigger interactive learning modules.</p>
+                    </div>
+                    
+                    <div class="impact-card">
+                        <div class="impact-icon-wrapper color-pink">
+                            <i data-lucide="mic"></i>
+                        </div>
+                        <h3>Digital Storytelling</h3>
+                        <p>Preserves oral folklore that traditionally gets lost between generations by archiving spoken testimonies and folk songs of elders.</p>
+                    </div>
+                    
+                    <div class="impact-card">
+                        <div class="impact-icon-wrapper color-purple">
+                            <i data-lucide="accessibility"></i>
+                        </div>
+                        <h3>Global Accessibility</h3>
+                        <p>Allows travelers who cannot afford expensive physical tour guides to explore rich histories on any basic mobile phone browser.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Future Scope Section -->
+        <section class="roadmap-section" id="roadmap">
+            <div class="container">
+                <div class="section-tag">Roadmap</div>
+                <h2 class="section-title">Future Scope & Scalability</h2>
+                <p class="section-subtitle">A visionary path towards complete immersion and smart tour ecosystems.</p>
+                
+                <!-- Timeline Tabs -->
+                <div class="roadmap-tabs-headers">
+                    <button class="roadmap-tab active" data-phase="phase1">Phase 1: AR & Real-Time</button>
+                    <button class="roadmap-tab" data-phase="phase2">Phase 2: Immersive Audio</button>
+                    <button class="roadmap-tab" data-phase="phase3">Phase 3: Global Ecosystem</button>
+                </div>
+                
+                <!-- Roadmap Content Container -->
+                <div class="roadmap-content-wrapper">
+                    <!-- Phase 1 Content -->
+                    <div class="roadmap-panel active" id="phase1-panel">
+                        <div class="roadmap-panel-grid">
+                            <div class="roadmap-text-box">
+                                <div class="phase-badge">Short Term</div>
+                                <h3>Augmented Reality Heritage Tours & Real-Time Detection</h3>
+                                <p>Equipping the scanner with real-time video feeds. Users can simply pan their camera across a landscape, and AR labels will automatically pop up above pillars, domes, and arches, rendering their architectural blueprint overlays.</p>
+                                <ul class="roadmap-bullets">
+                                    <li><i data-lucide="check-circle-2"></i> WebXR integrated AR browser experience</li>
+                                    <li><i data-lucide="check-circle-2"></i> Real-time multi-object detection in webcam views</li>
+                                    <li><i data-lucide="check-circle-2"></i> Overlay architectural wireframe outlines on screen</li>
+                                </ul>
+                            </div>
+                            <div class="roadmap-visual-box">
+                                <div class="mock-ar-frame">
+                                    <div class="ar-scanner-lens">
+                                        <div class="scan-dot dot-1"></div>
+                                        <div class="scan-dot dot-2"></div>
+                                        <div class="scan-tag-ar">Mughal Dome (1648)<br><span>Click to isolate</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Phase 2 Content -->
+                    <div class="roadmap-panel" id="phase2-panel">
+                        <div class="roadmap-panel-grid">
+                            <div class="roadmap-text-box">
+                                <div class="phase-badge">Medium Term</div>
+                                <h3>Spatial Audio Storytelling & Regional Languages</h3>
+                                <p>Expanding audio guides into localized spatial audio soundscapes. Sound effects (reconstructed market chatter, ancient royal fanfare, and authentic traditional instruments) play in the background, matching the historical era being described.</p>
+                                <ul class="roadmap-bullets">
+                                    <li><i data-lucide="check-circle-2"></i> Ambient historical soundscaping engine</li>
+                                    <li><i data-lucide="check-circle-2"></i> Expansion to 12+ regional Indian and 8 international languages</li>
+                                    <li><i data-lucide="check-circle-2"></i> Voice cloning of local professional heritage historians</li>
+                                </ul>
+                            </div>
+                            <div class="roadmap-visual-box">
+                                <div class="mock-audio-spectrum">
+                                    <div class="spectrum-bars">
+                                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                    <div class="audio-feature-label"><i data-lucide="headphones"></i> Ambient Soundscapes Active</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Phase 3 Content -->
+                    <div class="roadmap-panel" id="phase3-panel">
+                        <div class="roadmap-panel-grid">
+                            <div class="roadmap-text-box">
+                                <div class="phase-badge">Long Term</div>
+                                <h3>Global Tourism Ecosystem & Personalized Itineraries</h3>
+                                <p>Building a decentralized heritage ecosystem partnering with local museums and national tourist boards. AI analyzes historical scanning bookmarks to generate personalized itineraries, recommending off-beat cultural sites and sustainable craft markets.</p>
+                                <ul class="roadmap-bullets">
+                                    <li><i data-lucide="check-circle-2"></i> Collaboration with conservation organizations</li>
+                                    <li><i data-lucide="check-circle-2"></i> AI itinerary generator based on architectural preferences</li>
+                                    <li><i data-lucide="check-circle-2"></i> Smart offline guides for remote monuments</li>
+                                </ul>
+                            </div>
+                            <div class="roadmap-visual-box">
+                                <div class="mock-itinerary-card">
+                                    <div class="itinerary-header">Your Cultural Route</div>
+                                    <div class="itinerary-stops">
+                                        <div class="stop"><span>1</span> Taj Mahal</div>
+                                        <div class="stop-line"></div>
+                                        <div class="stop"><span>2</span> Agra Fort</div>
+                                        <div class="stop-line"></div>
+                                        <div class="stop"><span>3</span> Fatehpur Sikri</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. About Project Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-box">
+                    <div class="about-main-text">
+                        <div class="section-tag">Project Overview</div>
+                        <h2>Preserving the Past with Artificial Intelligence</h2>
+                        <p>
+                            HeritageLens AI combines artificial intelligence, cultural preservation, and smart tourism to transform the way people interact with historical landmarks. The platform makes heritage more accessible, engaging, and educational for future generations while helping preserve valuable cultural stories and traditions.
+                        </p>
+                        <p>
+                            By integrating modern computer vision algorithms with rich historical catalogs, we construct a gateway where structural stones speak and history becomes an active, shared human experience.
+                        </p>
+                    </div>
+                    
+                    <div class="about-tech-stack">
+                        <h3>Technical Highlights</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i data-lucide="cpu"></i> Computer Vision</span>
+                            <span class="tech-tag"><i data-lucide="languages"></i> Bilingual Translation</span>
+                            <span class="tech-tag"><i data-lucide="speech"></i> Web Speech API</span>
+                            <span class="tech-tag"><i data-lucide="smartphone"></i> Responsive UI</span>
+                            <span class="tech-tag"><i data-lucide="database"></i> Local Storage Cache</span>
+                            <span class="tech-tag"><i data-lucide="sparkles"></i> CSS Glassmorphism</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Team Section -->
+        <section class="team-section" id="team">
+            <div class="container">
+                <div class="section-tag">The Innovator</div>
+                <h2 class="section-title">Project Creator</h2>
+                
+                <div class="team-wrapper">
+                    <div class="creator-card">
+                        <div class="creator-avatar">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <h3>Tanu Gupta</h3>
+                        <p class="creator-role">Creator & Developer</p>
+                        <div class="creator-meta">
+                            <span class="meta-item"><i data-lucide="code-2"></i> Solo Hackathon Project</span>
+                            <span class="meta-item"><i data-lucide="trophy"></i> Built for Tradition Hacks 2026</span>
+                        </div>
+                        <p class="creator-bio">
+                            Passionate about the intersection of cultural heritage conservation and neural networks. Dedicated to building accessible digital history platforms for students and curious travelers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 11. Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <i data-lucide="scan-face"></i>
+                    <span>HeritageLens AI</span>
+                </div>
+                <p>Point, Scan, Discover History. Connecting history and future technology.</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="links-group">
+                    <h4>Navigation</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#problem">The Gap</a>
+                    <a href="#why-it-matters">Why It Matters</a>
+                    <a href="#demo">Live Scanner</a>
+                </div>
+                <div class="links-group">
+                    <h4>Core Values</h4>
+                    <a href="#features">Features</a>
+                    <a href="#impact">Impact</a>
+                    <a href="#roadmap">Future Scope</a>
+                    <a href="#about">Technical Specs</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 HeritageLens AI. All rights reserved.</p>
+            <p class="footer-hackathon-info">
+                Built for <span class="highlight-text">Tradition Hacks 2026</span> | AI for Cultural Preservation & Smart Tourism
+            </p>
+        </div>
+    </footer>
+
+    <!-- Custom JS Logic -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
