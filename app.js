@@ -342,7 +342,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         try {
-            const response = await fetch("http://localhost:3000/api/scan", {
+            const response = await fetch("https://heritagelens-ai-9hpk.onrender.com/api/scan", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
