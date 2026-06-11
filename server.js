@@ -9,9 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Enable CORS for frontend development server
-app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174', 'http://127.0.0.1:5173', 'http://127.0.0.1:5174']
-}));
+app.use(cors());
 
 // Increase JSON payload limit to handle base64 image uploads
 app.use(express.json({ limit: '15mb' }));
