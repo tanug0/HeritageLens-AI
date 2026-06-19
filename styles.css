@@ -2466,3 +2466,113 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
     }
 }
+
+/* Contact Section */
+
+.contact-section{
+    padding:80px 10%;
+    text-align:center;
+    background:transparent;
+}
+
+.section-badge{
+    display:inline-block;
+    padding:8px 18px;
+    margin-bottom:20px;
+
+    border:1px solid rgba(255,165,0,0.35);
+    border-radius:999px;
+
+    color:#ff9f43;
+    font-size:0.8rem;
+    font-weight:600;
+    letter-spacing:1px;
+
+    background:rgba(255,165,0,0.08);
+}
+
+.contact-section h2{
+    font-size:3rem;
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:15px;
+}
+
+.contact-text{
+    color:#bdbdbd;
+    margin-bottom:45px;
+    line-height:1.7;
+}
+
+.contact-cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.contact-card{
+    width:280px;
+    padding:30px 25px;
+
+    background:rgba(255,255,255,0.04);
+
+    border:1px solid rgba(255,165,0,0.30);
+    border-radius:18px;
+
+    backdrop-filter:blur(10px);
+
+    transition:0.3s ease;
+}
+
+.contact-card:hover{
+    transform:translateY(-6px);
+    border-color:#ff9f43;
+}
+
+.contact-icon{
+    width:36px;
+    height:36px;
+
+    color:#ff9f43;
+
+    margin-bottom:15px;
+}
+
+.contact-card h3{
+    color:#ff9f43;
+    margin-bottom:12px;
+    font-size:1.4rem;
+}
+
+.contact-card p{
+    color:#ffffff;
+}
+
+.contact-card a{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.contact-card a:hover{
+    color:#ff9f43;
+}
+
+.contact-header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.contact-header h3{
+    margin:0;
+}
+
+.contact-icon{
+    width:24px;
+    height:24px;
+    color:#ff9f43;
+    margin:0;
+}
